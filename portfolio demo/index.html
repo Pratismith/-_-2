@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pratismith- Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: rgb(4, 10, 66);
+        color: rgb(235, 238, 240);
+        font-family: "Poppins", sans-serif;
+      }
+      .background {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, #040a42, #6507b1, #4e03a6);
+        background-size: 300% 300%;
+        animation: gradient 15s ease infinite;
+        z-index: -1;
+      }
+
+      @keyframes gradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+
+        background-color: rgb(19, 19, 73);
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul li a:hover {
+        color: rgb(88, 105, 182);
+        font-size: 1.04rem;
+      }
+
+      main hr {
+        border: 0;
+        background: #6565d7;
+        height: 0.4px;
+        margin: 40px 84px;
+      }
+
+      .left {
+        font-size: 1.5rem;
+      }
+
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 140px 0;
+      }
+
+      .firstSection > div {
+        width: 30%;
+      }
+
+      .leftSection {
+        font-size: 3rem;
+      }
+      .leftSection .buttons {
+        padding: 50px 0;
+      }
+      .leftSection .btn {
+        padding: 12px;
+        background-color: #6565d7;
+        color: white;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+
+      
+      .rightSection img {
+    width: 130%;
+    margin: 3px 0px;
+}
+
+      .purple {
+        color: blueviolet;
+      }
+
+      .text-gray {
+        color: gray;
+      }
+
+      #element {
+        color: rgb(186, 212, 34);
+      }
+
+      .secondSection {
+        max-width: 68vw;
+        margin: auto;
+        height: 80vh;
+        padding: 0px;
+      }
+
+      .secondSection h1 {
+        font-size: 1.9rem;
+        margin-left: -70px;
+      }
+
+      .secondSection .box {
+        background: white;
+        width: 77vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+
+      .secondSection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 120px;
+      }
+
+      .image-top {
+        width: 23px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+      }
+
+      .vertical-title {
+        position: relative;
+        top: 75px;
+        width: 150px;
+      }
+
+      .vertical-desc {
+        position: relative;
+        top: 86px;
+        color: gray;
+        width: 150px;
+        font-size: 9px;
+      }
+      footer {
+        background: rgb(25, 13, 39);
+      }
+
+      .footer {
+        display: flex;
+        margin: 0px 122px;
+        justify-content: space-evenly;
+      }
+      .footer-first {
+        display: flex;
+        margin-left: 123px;
+      }
+      .footer ul {
+        list-style: none;
+
+        margin-left: 0px;
+      }
+      .footer > div {
+        width: 223px;
+      }
+      footer .footer-rights {
+        text-align: center;
+        color: gray;
+        padding: 12px 0;
+      }
+
+      .button {
+        background-color: #04aa6d; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="left"><b>Pratismith's Portfolio</b></div>
+        <div class="right">
+          <ul>
+            <li><a href="about.html"> About </a></li>
+            <li><a href="home.html"> Home </a></li>
+            <li><a href="services.html"> Services </a></li>
+            <li><a href="projects.html"> Projects </a></li>
+            <li><a href="contact.html"> Contact </a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="background"></div>
+
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          <div>Hi, My name is</div>
+          <span class="purple">Pratismith</span>
+          <div>and</div>
+          <div>I m an Engineer</div>
+          <span id="element"></span>
+
+          <div class="buttons">
+            <a href="https://black-imogene-31.tiiny.site" class="btn" download
+              >Download CV</a
+            >
+            <a href="https://github.com/Pratismith" class="btn" target="_blank"
+              >Visit Github</a
+            >
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="web-developer-portfolio.webp" alt="" />
+        </div>
+      </section>
+
+      <section class="secondSection">
+        <span class="text-gray" ; style="margin-left: -70px"
+          >What I have done so far</span
+        >
+        <h1>Work Experience</h1>
+
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="html.png" alt="" />
+            <div class="vertical-title">HTML Developer (2010-2015)</div>
+            <div class="vertical-desc">
+              HyperText Markup Language (HTML) is a markup language that defines
+              the structure and meaning of web content. It uses markup to
+              annotate text, images, and other content for display in a web
+              browser. HTML is the basic scripting language used by web browsers
+              to render pages on the World Wide Web
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="js.png" />
+            <div class="vertical-title">JS Developer(2015-2020)</div>
+            <div class="vertical-desc">
+              JavaScript (JS) is a lightweight interpreted (or just-in-time
+              compiled) programming language with first-class functions. While
+              it is most well-known as the scripting language for Web pages,
+              many non-browser environments also use it, such as Node.js, Apache
+              CouchDB and Adobe Acrobat
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="h.jpeg" />
+            <div class="vertical-title">Ethical Hacker(2020-2024)</div>
+            <div class="vertical-desc">
+              Ethical hackers, also known as white hat hackers, are
+              cybersecurity professionals who use their skills to legally test
+              an organization's security systems for vulnerabilities. They are
+              hired by companies, governments, and other organizations to
+              improve security posture and provide remediation advice.
+            </div>
+          </div>
+
+          <div class="vertical">
+            <img class="image-top" src="ml.jpg" />
+            <div class="vertical-title">Machine Learning(2024-2030)</div>
+            <div class="vertical-desc">
+              Machine learning (ML) is a branch of computer science and
+              artificial intelligence (AI) that uses algorithms and data to help
+              computers perform tasks without explicit instructions.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="r.png" />
+            <div class="vertical-title">Robotics</div>
+            <div class="vertical-desc">
+              Robotics is a branch of engineering and computer science that
+              involves the conception, design, manufacture and operation of
+              robots.
+            </div>
+          </div>
+          <!-- <div class="vertical">
+            <img class="image-top" src="rp.png" />
+            <div class="vertical-title">Raspberry Pi</div>
+            <div class="vertical-desc">
+              The Raspberry Pi is a small, credit card-sized single-board
+              computer (SBC) designed to be a learning environment for people
+              new to computing and programming. It was created in 2012 by the
+              Raspberry Pi Foundation, a UK charity, in association with
+              Broadcom.
+            </div>
+          </div> -->
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>My Portfolio Website</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li>Home</li>
+            <li>AboutUs</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+
+        <div class="footer-rights">
+          www.themynest.com<br />
+          All Rights Reserved
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "JS Developer", "Ethical Hacker"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
